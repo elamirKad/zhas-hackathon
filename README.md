@@ -8,6 +8,8 @@ In competition we chose case from [KeepItFresh](https://www.instagram.com/keepit
 
 For this project, I decided to use the Django REST Framework with PostgreSQL to write the API. The recommendation engine was built on the Scikit-Learn library using cosine similarity. The API has CRUD functionality and a request method for the recommendation engine.
 
+[WEBSITE](https://zhas-hackathon.herokuapp.com/api/v1/recommend/555.324.1320/3)
+
 ![image1](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot1.png)
 ![image2](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot2.png)
 

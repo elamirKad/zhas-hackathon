@@ -19,8 +19,8 @@ class Recommendation:
         self.cm = CountVectorizer().fit_transform(self.df['combined_features'])
         self.cs = cosine_similarity(self.cm)
 
-    def get_recommendation(self, name, max=5):
-        cosmetic_id = self.df[self.df.Name == name]['id'].values[0]
+    def get_recommendation(self, id, max=5):
+        cosmetic_id = id
         scores = list(enumerate(self.cs[cosmetic_id]))
         sorted_scores = sorted(scores, key=lambda x: x[1], reverse=True)
         sorted_scores = sorted_scores[1:max+1]
@@ -28,5 +28,5 @@ class Recommendation:
 
 
 rec = Recommendation()
-
-print(rec.get_recommendation('Facial Treatment Essence'))
+for id, value in rec.get_recommendation(1):
+    print(id)

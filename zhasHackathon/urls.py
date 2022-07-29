@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from recommend.views import CosmeticsViewSet
+from recommend.views import CosmeticsViewSet, RecommendAPIView
 
 router = routers.SimpleRouter()
 router.register(r'cosmetics', CosmeticsViewSet)
@@ -25,4 +25,5 @@ router.register(r'cosmetics', CosmeticsViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
+    path('api/v1/recommend/<int:pk>', RecommendAPIView.as_view())
 ]

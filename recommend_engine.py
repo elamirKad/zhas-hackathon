@@ -26,7 +26,3 @@ class Recommendation:
         sorted_scores = sorted_scores[1:max+1]
         return sorted_scores
 
-
-rec = Recommendation()
-for id, value in rec.get_recommendation(1):
-    print(id)

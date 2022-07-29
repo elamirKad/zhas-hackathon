@@ -20,10 +20,19 @@ class RecommendAPIView(APIView):
         if not pk:
             return Response({"error": "Method GET not allowed"})
         try:
+            amount = kwargs.get("amount", None)
+            temp = str(pk)
+            pk_list = temp.split(".")
             rec = Recommendation()
             lst = []
-            for id, percent in rec.get_recommendation(pk):
-                lst.append(id)
+            for p in pk_list:
+                if not amount:
+                    for id, percent in rec.get_recommendation(int(p)):
+                        lst.append(id)
+                else:
+                    for id, percent in rec.get_recommendation(int(p), amount):
+                        lst.append(id)
+
             objects = Cosmetics.objects.filter(id__in=lst)
             return Response({'cosmetics': CosmeticsSerializer(objects, many=True).data})
         except:

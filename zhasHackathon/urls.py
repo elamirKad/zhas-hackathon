@@ -25,5 +25,6 @@ router.register(r'cosmetics', CosmeticsViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
-    path('api/v1/recommend/<int:pk>', RecommendAPIView.as_view())
+    path('api/v1/recommend/<str:pk>', RecommendAPIView.as_view()),
+    path('api/v1/recommend/<str:pk>/<int:amount>', RecommendAPIView.as_view()),
 ]

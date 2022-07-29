@@ -1,0 +1,6 @@
+Django==4.0.6
+django_heroku==0.3.1
+djangorestframework==3.13.1
+numpy==1.23.1
+pandas==1.4.3
+scikit_learn==1.1.1

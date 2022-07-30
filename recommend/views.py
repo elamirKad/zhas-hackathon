@@ -8,11 +8,19 @@ from rest_framework.views import APIView
 from recommend.models import Cosmetics
 from recommend.serializers import CosmeticsSerializer
 from recommend_engine import Recommendation
+from django_filters import rest_framework as filters
+
+
+class CosmeticsFilter(filters.FilterSet):
+    brand = filters.CharFilter(field_name='brand', lookup_expr='icontains')
+    name = filters.CharFilter(field_name='name', lookup_expr='icontains')
 
 
 class CosmeticsViewSet(viewsets.ModelViewSet):
     queryset = Cosmetics.objects.all()
     serializer_class = CosmeticsSerializer
+    filter_backends = (filters.DjangoFilterBackend,)
+    filterset_class = CosmeticsFilter
 
 class RecommendAPIView(APIView):
     def get(self, request, *args, **kwargs):

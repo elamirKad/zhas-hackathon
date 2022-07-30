@@ -19,8 +19,9 @@ from rest_framework import routers
 
 from recommend.views import CosmeticsViewSet, RecommendAPIView
 
-router = routers.SimpleRouter()
+router = routers.DefaultRouter()
 router.register(r'cosmetics', CosmeticsViewSet)
+print(router.urls)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

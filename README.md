@@ -13,6 +13,9 @@ For this project, I decided to use the Django REST Framework with PostgreSQL to 
 ![image1](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot1.png)
 ![image2](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot2.png)
 
+![image3](https://github.com/elamirKad/zhas-hackathon/blob/main/github/mobile1.jpg)
+![image4](https://github.com/elamirKad/zhas-hackathon/blob/main/github/mobile2.jpg)
+
 # Installation
 Run installation command:
 ```
@@ -76,6 +79,11 @@ DELETE request: to delete specific row by pk (pk==id)
 ```
 https://zhas-hackathon.herokuapp.com/api/v1/cosmetics/<int:pk>/
 ```
+GET request: to filter rows by name and brand
+```
+https://zhas-hackathon.herokuapp.com/api/v1/cosmetics/?brand=&name=
+```
+
 
 ### Recommendation API
 
@@ -94,3 +102,11 @@ Example 2:
 https://zhas-hackathon.herokuapp.com/api/v1/recommend/555.12.278/3
 ```
 In this case, we receive 3 recommendations for each row with id's 555, 12, 278
+
+# Authors
+
+### Frontend - [sumeshi-k](https://github.com/sumeshi-k)
+
+### Backend & ML - [elamirKad](https://github.com/elamirKad)
+
+### Mobile - [lumi808](https://github.com/lumi808)

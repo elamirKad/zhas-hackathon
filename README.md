@@ -10,11 +10,20 @@ For this project, I decided to use the Django REST Framework with PostgreSQL to 
 
 [WEBSITE](https://zhas-hackathon.herokuapp.com/api/v1/recommend/555.324.1320/3)
 
-![image1](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot1.png)
-![image2](https://github.com/elamirKad/zhas-hackathon/blob/main/github/Screenshot2.png)
+## API
 
-![image3](https://github.com/elamirKad/zhas-hackathon/blob/main/github/mobile1.jpg)
-![image4](https://github.com/elamirKad/zhas-hackathon/blob/main/github/mobile2.jpg)
+![image1](https://github.com/elamirKad/zhas-hackathon/blob/master/github/Screenshot1.png)
+![image2](https://github.com/elamirKad/zhas-hackathon/blob/master/github/Screenshot2.png)
+
+## Mobile
+
+<img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/mobile1.jpg" width="300" /> <img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/mobile2.jpg" width="300" />
+
+## Frontend
+<img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/front1.jpg" />
+<img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/front2.jpg" />
+<img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/front3.jpg" />
+<img src="https://github.com/elamirKad/zhas-hackathon/blob/master/github/front4.jpg" />
 
 # Installation
 Run installation command:
